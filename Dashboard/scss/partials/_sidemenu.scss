@@ -1,0 +1,236 @@
+// SIDE NAVBAR
+main {
+	.sideBarMenu {
+		display: flex;
+		justify-content: center;
+		
+		width: 20%;
+		height: 100%;
+		
+        background-image: url('../images/red_vel.jpg');
+        background-size: cover;
+        
+		position: fixed;
+		left: 0;
+		top: 225px;
+        
+		.fflex {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			
+		}
+		img {
+			width: 80%;
+			height: auto;
+	
+			position: relative;
+			
+		           
+		}
+		h2 {
+			font-family: $mainFont;
+			font-size: $ss;
+			color: $blueFontColour;
+			position: relative;
+			top: 15px;
+            margin-top: 27px;
+			margin-bottom: 27px;
+			
+		}
+        
+        .border{
+            
+            z-index: 50;
+            position: absolute;
+            
+            
+            
+        }
+        
+        #borderT{
+            top: 0;
+            left: 50;
+            width: 100%;
+            height: 20px;
+            background-image: url('../images/borderT.png');
+           
+            z-index: 50;
+            
+        }
+        #borderB{
+            bottom: 225px;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background-image: url('../images/borderB.png');
+
+            z-index: 50;
+            
+        }
+            #borderL{
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 100%;
+            background-image: url('../images/borderL.png');
+           
+                z-index: 49;
+            
+                }
+        #borderR{
+            top: 0;
+            right: 0;
+            width: 20px;
+            height: 100%;
+            background-image: url('../images/borderR.png');
+           
+            z-index: 49;
+            
+        }
+        
+        .corner{
+            
+            z-index: 51;
+            position: absolute;
+            
+            
+            
+        }
+        
+        #topR{
+            top: 0;
+            right: 0;
+            width: 25px;
+            height: 25px;
+            background-image: url('../images/topR.png');
+            
+            
+        }
+        #topL{
+            top: 0;
+            left: 0;
+            width: 25px;
+            height: 25px;
+            background-image: url('../images/topL.png');
+            
+            
+        }
+            #botR{
+            bottom: 225px;
+            right: 0;
+            width: 25px;
+            height: 25px;
+            background-image: url('../images/botR.png');
+            
+            
+                }
+        #botL{
+            bottom: 225px;
+            left: 0;
+            width: 25px;
+            height: 25px;
+            background-image: url('../images/botL.png');
+            
+            
+        }
+        
+		        .skillbar {
+		            
+		            position:relative;
+		            display:block;
+		            margin-bottom:50px;
+		            width:80%;
+		            background:#eee;
+		            height:20px;
+		            border-radius:3px;
+		            -moz-border-radius:3px;
+		            -webkit-border-radius:3px;
+		            -webkit-transition:0.4s linear;
+		            -moz-transition:0.4s linear;
+		            -ms-transition:0.4s linear;
+		            -o-transition:0.4s linear;
+		            transition:0.4s linear;
+		            -webkit-transition-property:width, background-color;
+		            -moz-transition-property:width, background-color;
+		            -ms-transition-property:width, background-color;
+		            -o-transition-property:width, background-color;
+		            transition-property:width, background-color;
+		            
+		            .skillbar-bar {
+		                height:35px;
+		                width:0px;
+		                border-radius:3px;
+		                -moz-border-radius:3px;
+		                -webkit-border-radius:3px;
+		            }
+		            
+		            .skill-bar-percent {
+		                font-family: $mainFont;
+		                font-weight: 400;
+		                position:absolute;
+		                right:10px;
+		                top:-7px;
+		                font-size:11px;
+		                height:20px;
+		                line-height:35px;
+		                color:#000000;
+		                color:rgba(0, 0, 0, 0.4);
+		            }
+		            
+		            .skillbar-title {
+		                font-family: $mainFont;
+		                font-weight: 400;
+		                position:absolute;
+		                top:3px;
+		                left:0;
+		                width:110px;
+		                font-weight:bold;
+		                font-size:13px;
+		                color:#ffffff;
+		                -webkit-border-top-left-radius:3px;
+		                -webkit-border-bottom-left-radius:4px;
+		                -moz-border-radius-topleft:3px;
+		                -moz-border-radius-bottomleft:3px;
+		                border-top-left-radius:3px;
+		                border-bottom-left-radius:3px;
+		                
+		                span {
+		                    position: relative;
+		                    top: 0;
+		                    padding: 10px;
+		                    -webkit-border-top-left-radius:3px;
+		                    -webkit-border-bottom-left-radius:3px;
+		                    -moz-border-radius-topleft:3px;
+		                    -moz-border-radius-bottomleft:3px;
+		                    border-top-left-radius:3px;
+		                    border-bottom-left-radius:3px;
+		                }
+		
+		            }
+		        }
+		ul {
+            margin-top: -35px;
+			li {
+				padding: 15px 0;
+				padding-bottom: 5px;
+                font-size: 30px;
+				a {
+  
+					font-family: $mainFont;
+					//font-weight: 700;
+					color: $blueFontColour;
+					text-decoration: none;
+					  font-size: $ss;
+				}
+			}
+            
+            .TextGlow:hover{
+                 text-shadow: 0px 0px 25px rgb(255, 61, 61);
+                
+            }
+            
+		}
+	}
+}
